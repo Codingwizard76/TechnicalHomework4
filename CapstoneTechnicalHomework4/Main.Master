@@ -1,25 +1,71 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="CapstoneTechnicalHomework4.Main" %>
 
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head runat="server">
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--link to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <h1 style="color:blue">Master Page</h1>
-            <div style="display:flex;flex-direction:row;justify-content:space-around;width:25%;">
-                <a href="Default.aspx">Default Page</a>
-                <a href="PageTwo.aspx">Page Two</a>
-           
-            </div>
+<form id="form1" runat="server">
+ <div>
+            <!--nav bar -->
+        <nav style="background-color:#DCF3E7;" class="navbar navbar-expand-lg fixed-top ">
+            <div class="container-fluid">
+        <!--Adding a brand logo to make the nav bar look nicer -->
+                <a class="navbar-brand" href="#">
+                    <h1>Pet Med</h1>
+                    <img src="images/donutDog.jpg" alt="Ped Med Logo" width="100" height="124" class="d-inline-block align-text-top rounded" >
+             </a>
+        <!-- Collaspible button using Bootstrap -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigtion"> <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse-horizontal navbar-collapse" id="navbarSupportedContent">
+                 <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <!-- Products link that will be displayed on the nav bar -->
+                        <a style="font-size:20px; color:#BF40BF" class="nav-link active fs-2 bi bi-prescription2" aria-current="page" href="Default.aspx">Products
+                            <!--Prescription icon that will be displayed on the nav bar -->
+                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-prescription2" viewBox="0 0 16 16">
+                         <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2V6Z"/> <path fill-rule="evenodd" d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1V1Zm2 3h8v10.5a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5V4ZM3 3V1h10v2H3Z"/>
+                         </svg>
+                        </a> 
+                        
+      
+                    </li>
+                     <li class="nav-item">
+                        <!-- About Ped Med link that will be displayed on the nav bar -->
+                        <a  style="font-size:20px;color:#BF40BF;" class="nav-link active fs-2" href="PageTwo.aspx">About Pet Med
+                            <!-- Question mark icon that will be displaed on the nav bar -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-question-diamond-fill" viewBox="0 0 16 16">
+                            <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM5.495 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                <!-- Checkout link that will be displayed on the nav bar -->
+                        <a  style="font-size:20px; color:#BF40BF;" class="nav-link active fs-2" href="PageThree.aspx"> Checkout
+                            <!-- Shopping cart Icon that will be displayed on the nav bar -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                         </svg>
+                        </a>
+                   </li>
+
+                </ul>
+
+             </div>
+        </div>
+    </nav>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
-    </form>
+</div>
+</form>
 </body>
 </html>
