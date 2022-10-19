@@ -95,11 +95,18 @@
     <Content Include="images\donutDog.jpg" />
     <Content Include="images\pedMedLogo.png" />
     <Content Include="images\petTest %281%29.png" />
+    <Content Include="login-frame.css" />
+    <Content Include="login-frame.html" />
+    <Content Include="loginstyle.css" />
+    <Content Include="PageFour.aspx" />
     <Content Include="PageThree.aspx" />
     <Content Include="PageTwo.aspx" />
     <Content Include="public\playground_assets\alarmi151-c0ag.svg" />
+    <Content Include="public\playground_assets\alarmi202-t53r.svg" />
     <Content Include="public\playground_assets\bluetoothi151-jkbp.svg" />
+    <Content Include="public\playground_assets\bluetoothi202-ije.svg" />
     <Content Include="public\playground_assets\bodyi151-cg9vi.svg" />
+    <Content Include="public\playground_assets\bodyi202-tmo.svg" />
     <Content Include="public\playground_assets\catmed112399-72m-200h.png" />
     <Content Include="public\playground_assets\catmed212400-lax8-200h.png" />
     <Content Include="public\playground_assets\catmed312401-egn-200h.png" />
@@ -119,23 +126,37 @@
     <Content Include="public\playground_assets\dogmed312390-1zd-200w.png" />
     <Content Include="public\playground_assets\dogmed418138-eehl-200h.png" />
     <Content Include="public\playground_assets\dogmed512395-c1y-200w.png" />
+    <Content Include="public\playground_assets\ellipse2131244-z32o.svg" />
     <Content Include="public\playground_assets\ellipse2133755-5mz8.svg" />
     <Content Include="public\playground_assets\fishmedicine15410-xerh-200w.png" />
     <Content Include="public\playground_assets\hoarsemedicine15409-p4h-200w.png" />
     <Content Include="public\playground_assets\houseicon11202-qqv-200h.png" />
+    <Content Include="public\playground_assets\houseicon21243-mc12l-200h.png" />
     <Content Include="public\playground_assets\iconsignali151-d7rh.svg" />
+    <Content Include="public\playground_assets\iconsignali202-nm4h.svg" />
     <Content Include="public\playground_assets\ideatelinecarti235-wm2.svg" />
     <Content Include="public\playground_assets\image111013327-jl77-200h.png" />
     <Content Include="public\playground_assets\line22381-uan.svg" />
     <Content Include="public\playground_assets\line32382-8ixs.svg" />
+    <Content Include="public\playground_assets\nortonthemailmanaslighttanfishleg15031-llos-200w.png" />
     <Content Include="public\playground_assets\parrotmedicine15408-3ez-200w.png" />
+    <Content Include="public\playground_assets\phone2017-tk5t.svg" />
+    <Content Include="public\playground_assets\premiumvectorcutedogandcatcartoonillustrationanima5031-bsh-200h.png" />
+    <Content Include="public\playground_assets\rectangle12016-pm0n-200h.png" />
     <Content Include="public\playground_assets\rectangle17023753-lfdg-200h.png" />
+    <Content Include="public\playground_assets\rectangle22016-p11k-200h.png" />
     <Content Include="public\playground_assets\rectangle9822306-9pbb-200h.png" />
+    <Content Include="public\playground_assets\rectangle9834528-2qzc-200h.png" />
     <Content Include="public\playground_assets\reservei151-q91w.svg" />
+    <Content Include="public\playground_assets\reservei202-gnvf.svg" />
     <Content Include="public\playground_assets\terminali151-manm.svg" />
+    <Content Include="public\playground_assets\terminali202-5wi.svg" />
     <Content Include="public\playground_assets\turtlemedicine15411-d6vk-200w.png" />
+    <Content Include="public\playground_assets\union1244-ur0n.svg" />
+    <Content Include="public\playground_assets\unioni124-71x.svg" />
     <Content Include="public\playground_assets\unioni236-jti.svg" />
     <Content Include="public\playground_assets\wifii151-sprn.svg" />
+    <Content Include="public\playground_assets\wifii202-f3wq.svg" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -154,6 +175,13 @@
     </Compile>
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PageFour.aspx.cs">
+      <DependentUpon>PageFour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageFour.aspx.designer.cs">
+      <DependentUpon>PageFour.aspx</DependentUpon>
     </Compile>
     <Compile Include="PageThree.aspx.cs">
       <DependentUpon>PageThree.aspx</DependentUpon>
