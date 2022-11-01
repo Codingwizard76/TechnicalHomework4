@@ -1,5 +1,206 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="PageTwo.aspx.cs" Inherits="CapstoneTechnicalHomework4.PageTwo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./loginStyle.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./login-frame.css" rel="stylesheet" />
+
+      <div class="login-frame-container">
+        <div class="login-frame-login-frame">
+          <div class="login-frame-login">
+            <div class="login-frame-email">
+              <img
+                src="public/playground_assets/rectangle12016-pm0n-200h.png"
+                alt="Rectangle12016"
+                class="login-frame-rectangle1"
+              />
+              <img
+                src="public/playground_assets/rectangle22016-p11k-200h.png"
+                alt="Rectangle22016"
+                class="login-frame-rectangle2"
+              />
+              <span class="login-frame-text">
+                <span>Forget password ?</span>
+              </span>
+              <div class="login-frame-frame1">
+                <span class="login-frame-text02"><span>Login</span></span>
+              </div>
+              <span class="login-frame-text04"><span>Email</span></span>
+              <span class="login-frame-text06"><span>Password</span></span>
+              <div class="login-frame-group18325">
+                <div class="login-frame-frame2">
+                  <span class="login-frame-text08">
+                    <span>Create Account</span>
+                  </span>
+                </div>
+              </div>
+              <span class="login-frame-text10"><span>Email Login</span></span>
+              <span class="login-frame-text12"><span>Or</span></span>
+              <div class="login-frame-group1">
+                <span class="login-frame-text14">
+                  <span>Login with Phone Number</span>
+                </span>
+                <img
+                  src="public/playground_assets/phone2017-tk5t.svg"
+                  alt="Phone2017"
+                  class="login-frame-phone"
+                />
+              </div>
+              <div class="login-frame-i-phone678s-e">
+                <span class="login-frame-text16"><span>9:41 AM</span></span>
+                <div class="login-frame-right-side">
+                  <div class="login-frame-icon-battery">
+                    <img
+                      src="public/playground_assets/bodyi202-tmo.svg"
+                      alt="BodyI202"
+                      class="login-frame-body"
+                    />
+                    <img
+                      src="public/playground_assets/terminali202-5wi.svg"
+                      alt="TerminalI202"
+                      class="login-frame-terminal"
+                    />
+                    <img
+                      src="public/playground_assets/reservei202-gnvf.svg"
+                      alt="ReserveI202"
+                      class="login-frame-reserve"
+                    />
+                  </div>
+                  <span class="login-frame-text18"><span>100%</span></span>
+                  <div class="login-frame-icon-alarm">
+                    <img
+                      src="public/playground_assets/alarmi202-t53r.svg"
+                      alt="AlarmI202"
+                      class="login-frame-alarm"
+                    />
+                  </div>
+                  <div class="login-frame-icon-bluetooth">
+                    <img
+                      src="public/playground_assets/bluetoothi202-ije.svg"
+                      alt="BluetoothI202"
+                      class="login-frame-bluetooth"
+                    />
+                  </div>
+                </div>
+                <div class="login-frame-left-side">
+                  <img
+                    src="public/playground_assets/iconsignali202-nm4h.svg"
+                    alt="IconSignalI202"
+                    class="login-frame-icon-signal"
+                  />
+                  <span class="login-frame-text20"><span>Figma</span></span>
+                  <div class="login-frame-icon-wi-fi">
+                    <img
+                      src="public/playground_assets/wifii202-f3wq.svg"
+                      alt="WiFiI202"
+                      class="login-frame-wi-fi"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img
+                src="public/playground_assets/rectangle9834528-2qzc-200h.png"
+                alt="Rectangle9834528"
+                class="login-frame-rectangle983"
+              />
+              <img
+                src="public/playground_assets/nortonthemailmanaslighttanfishleg15031-llos-200w.png"
+                alt="NortontheMailmanaslighttanfishleg15031"
+                class="login-frame-nortonthe-mailmanaslighttanfishleg1"
+              />
+              <img
+                src="public/playground_assets/premiumvectorcutedogandcatcartoonillustrationanima5031-bsh-200h.png"
+                alt="PremiumVectorCutedogandcatcartoonillustrationanima5031"
+                class="login-frame-premium-vector-cutedogandcatcartoonillustrationanima"
+              />
+              <img
+                src="public/playground_assets/houseicon21243-mc12l-200h.png"
+                alt="houseIcon21243"
+                class="login-frame-house-icon2"
+              />
+              <div class="login-frame-question-mark-icon">
+                <img
+                  src="public/playground_assets/ellipse2131244-z32o.svg"
+                  alt="Ellipse2131244"
+                  class="login-frame-ellipse213"
+                />
+                <span class="login-frame-text22">?</span>
+              </div>
+              <img
+                src="public/playground_assets/union1244-ur0n.svg"
+                alt="Union1244"
+                class="login-frame-union"
+              />
+              <div class="login-frame-frame18311">
+                <div class="login-frame-frame859">
+                  <img
+                    src="public/playground_assets/unioni124-71x.svg"
+                    alt="UnionI124"
+                    class="login-frame-union1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
+
 </asp:Content>

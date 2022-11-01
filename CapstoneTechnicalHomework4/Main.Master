@@ -5,67 +5,474 @@
 <head runat="server">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Pet Med</title>
     <!--link to bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+
 <form id="form1" runat="server">
- <div>
-            <!--nav bar -->
-        <nav style="background-color:#DCF3E7;" class="navbar navbar-expand-lg fixed-top ">
-            <div class="container-fluid">
-        <!--Adding a brand logo to make the nav bar look nicer -->
-                <a class="navbar-brand" href="#">
-                    <h1>Pet Med</h1>
-                    <img src="images/donutDog.jpg" alt="Ped Med Logo" width="100" height="124" class="d-inline-block align-text-top rounded" >
-             </a>
-        <!-- Collaspible button using Bootstrap -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigtion"> <span class="navbar-toggler-icon"></span></button>
-                <div class="collapse-horizontal navbar-collapse" id="navbarSupportedContent">
-                 <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
-                     <li class="nav-item">
-                        <!-- Products link that will be displayed on the nav bar -->
-                        <a style="font-size:20px; color:#BF40BF" class="nav-link active fs-2 bi bi-prescription2" aria-current="page" href="Default.aspx">Products
-                            <!--Prescription icon that will be displayed on the nav bar -->
-                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-prescription2" viewBox="0 0 16 16">
-                         <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2V6Z"/> <path fill-rule="evenodd" d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1V1Zm2 3h8v10.5a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5V4ZM3 3V1h10v2H3Z"/>
-                         </svg>
-                        </a> 
-                        
-      
-                    </li>
-                     <li class="nav-item">
-                        <!-- About Ped Med link that will be displayed on the nav bar -->
-                        <a  style="font-size:20px;color:#BF40BF;" class="nav-link active fs-2" href="PageTwo.aspx">About Pet Med
-                            <!-- Question mark icon that will be displaed on the nav bar -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-question-diamond-fill" viewBox="0 0 16 16">
-                            <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM5.495 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
-                        </svg>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                <!-- Checkout link that will be displayed on the nav bar -->
-                        <a  style="font-size:20px; color:#BF40BF;" class="nav-link active fs-2" href="PageThree.aspx"> Checkout
-                            <!-- Shopping cart Icon that will be displayed on the nav bar -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                         </svg>
-                        </a>
-                   </li>
+    <!-- exported code from my own Figma design for pet med, this is the product frame where vets can place prescription orders. -->
 
-                </ul>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-             </div>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  
+    <div>
+      <link href="./home-frame.css" rel="stylesheet" />
+
+      <div class="home-frame-container">
+        <div class="home-frame-home-frame">
+          <img
+            src="public/playground_assets/catmed312401-egn-200h.png"
+            alt="catMed312401"
+            class="home-frame-cat-med31"
+          />
+          <img
+            src="public/playground_assets/catmed412402-4j6e-200h.png"
+            alt="catMed412402"
+            class="home-frame-cat-med41"
+          />
+          <div class="home-frame-group18313">
+            <div class="home-frame-frame18312">
+              <span class="home-frame-text"><span>Pet Med</span></span>
+              <img
+                src="public/playground_assets/image111013327-jl77-200h.png"
+                alt="IMAGE111013327"
+                class="home-frame-i-m-a-g-e11101"
+              />
+              <span class="home-frame-text02"><span>Dogs</span></span>
+              <img
+                src="public/playground_assets/checkbox11165-bzmq-200h.png"
+                alt="checkBox11165"
+                class="home-frame-check-box1"
+              />
+            </div>
+          </div>
+          <img
+            src="public/playground_assets/checkbox21165-gyoe-200h.png"
+            alt="checkBox21165"
+            class="home-frame-check-box2"
+          />
+          <img
+            src="public/playground_assets/checkbox21165-2puo-200h.png"
+            alt="checkBox21165"
+            class="home-frame-check-box21"
+          />
+          <img
+            src="public/playground_assets/checkbox11165-gee8-200h.png"
+            alt="checkBox11165"
+            class="home-frame-check-box11"
+          />
+          <div class="home-frame-i-phone678s-e">
+            <div class="home-frame-i-phone678s-e1">
+              <span class="home-frame-text04"><span>9:41 AM</span></span>
+              <div class="home-frame-right-side">
+                <div class="home-frame-icon-battery">
+                  <img
+                    src="public/playground_assets/bodyi151-cg9vi.svg"
+                    alt="BodyI151"
+                    class="home-frame-body"
+                  />
+                  <img
+                    src="public/playground_assets/terminali151-manm.svg"
+                    alt="TerminalI151"
+                    class="home-frame-terminal"
+                  />
+                  <img
+                    src="public/playground_assets/reservei151-q91w.svg"
+                    alt="ReserveI151"
+                    class="home-frame-reserve"
+                  />
+                </div>
+                <span class="home-frame-text06"><span>100%</span></span>
+                <div class="home-frame-icon-alarm">
+                  <img
+                    src="public/playground_assets/alarmi151-c0ag.svg"
+                    alt="AlarmI151"
+                    class="home-frame-alarm"
+                  />
+                </div>
+                <div class="home-frame-icon-bluetooth">
+                  <img
+                    src="public/playground_assets/bluetoothi151-jkbp.svg"
+                    alt="BluetoothI151"
+                    class="home-frame-bluetooth"
+                  />
+                </div>
+              </div>
+              <div class="home-frame-left-side">
+                <img
+                  src="public/playground_assets/iconsignali151-d7rh.svg"
+                  alt="IconSignalI151"
+                  class="home-frame-icon-signal"
+                />
+                <span class="home-frame-text08"><span>Figma</span></span>
+                <div class="home-frame-icon-wi-fi">
+                  <img
+                    src="public/playground_assets/wifii151-sprn.svg"
+                    alt="WiFiI151"
+                    class="home-frame-wi-fi"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <img
+              src="public/playground_assets/rectangle17023753-lfdg-200h.png"
+              alt="Rectangle17023753"
+              class="home-frame-rectangle1702"
+            />   <span class="home-frame-text10"><span>Search</span></span>
+             
+            
+          </div>
+          <div class="home-frame-dog-products-images">
+            <span class="home-frame-text12">
+              <span>CapAction (nitenpyram 11.4mg) $25.98</span>
+            </span>
+            <span class="home-frame-text14">
+              <span>
+                Simparica TRIO (sarolaner, moxidectin and pyrantel chewable
+                tabelts) $150.97
+              </span>
+            </span>
+            <img
+              src="public/playground_assets/dogmed112383-nln-200h.png"
+              alt="dogmed112383"
+              class="home-frame-dogmed11"
+            />
+            <img
+              src="public/playground_assets/dogmed212384-t3qd-200h.png"
+              alt="dogMed212384"
+              class="home-frame-dog-med21"
+            />
+            <img
+              src="public/playground_assets/dogmed312390-1zd-200w.png"
+              alt="dogMed312390"
+              class="home-frame-dog-med31"
+            />
+            <img
+              src="public/playground_assets/dogmed512395-c1y-200w.png"
+              alt="DogMed512395"
+              class="home-frame-dog-med51"
+            />
+            <img
+              src="public/playground_assets/dogmed418138-eehl-200h.png"
+              alt="dogMed418138"
+              class="home-frame-dog-med41"
+            />
+            <span class="home-frame-text16">
+              <span>Advantage II (Large Dog) $44.98</span>
+            </span>
+            <span class="home-frame-text18">
+              <span>PetArmor (Kills Fleas &amp; Ticks) $24.99</span>
+            </span>
+            <img
+              src="public/playground_assets/dog13327-oqk-200w.png"
+              alt="dog13327"
+              class="home-frame-dog1"
+            />
+            <span class="home-frame-text20">
+              <span>Cushex Drops-M $38.99</span>
+            </span>
+            <span class="home-frame-text22">
+              <span>
+                <span>Cannie Aspirin 120mg</span>
+                <br />
+                <span>$11.99</span>
+              </span>
+            </span>
+          </div>
+          <div class="home-frame-cat-products-images">
+            <img
+              src="public/playground_assets/catmed112399-72m-200h.png"
+              alt="catMed112399"
+              class="home-frame-cat-med11"
+            />
+            <img
+              src="public/playground_assets/catmed212400-lax8-200h.png"
+              alt="catMed212400"
+              class="home-frame-cat-med21"
+            />
+            <img
+              src="public/playground_assets/catmed512403-2pmo-200h.png"
+              alt="CatMed512403"
+              class="home-frame-cat-med51"
+            />
+            <img
+              src="public/playground_assets/catmed612404-jqpp-200w.png"
+              alt="catMed612404"
+              class="home-frame-cat-med61"
+            />
+            <img
+              src="public/playground_assets/catmed712405-nj5j-200w.png"
+              alt="catMed712405"
+              class="home-frame-cat-med71"
+            />
+            <img
+              src="public/playground_assets/catmed912407-unp9-200h.png"
+              alt="catMed912407"
+              class="home-frame-cat-med91"
+            />
+            <span class="home-frame-text27">
+              <span>
+                <span>Heartgard 6 Chewables</span>
+                <br />
+                <span>$44.99</span>
+              </span>
+            </span>
+            <span class="home-frame-text32">
+              <span>ParaDefense II $24.70</span>
+            </span>
+            <span class="home-frame-text34">
+              <span>
+                <span>Advocate Fleas &amp; Heartworm</span>
+                <br />
+                <span>$26.37</span>
+              </span>
+            </span>
+            <span class="home-frame-text39">
+              <span>
+                <span>
+                  Frontline Plus 8 Treatment, Cats &amp; Kitten 1.5lbs
+                </span>
+                <br />
+                <span>$79.89</span>
+              </span>
+            </span>
+            <span class="home-frame-text44">
+              <span>
+                <span>
+                  Exelepet Vet Series Montly Flea &amp; Intestinal Treatment
+                </span>
+                <br />
+                <span>$39.99</span>
+              </span>
+            </span>
+            <span class="home-frame-text49">
+              <span>
+                <span>6.2-13.8 lbs, Bravecto Topical Solution For Cats</span>
+                <br />
+                <span>$59.99</span>
+              </span>
+            </span>
+          </div>
+          <div class="home-frame-misc-products-images">
+            <img
+              src="public/playground_assets/parrotmedicine15408-3ez-200w.png"
+              alt="parrotMedicine15408"
+              class="home-frame-parrot-medicine1"
+            />
+            <img
+              src="public/playground_assets/hoarsemedicine15409-p4h-200w.png"
+              alt="hoarseMedicine15409"
+              class="home-frame-hoarse-medicine1"
+            />
+            <img
+              src="public/playground_assets/fishmedicine15410-xerh-200w.png"
+              alt="fishMedicine15410"
+              class="home-frame-fish-medicine1"
+            />
+            <img
+              src="public/playground_assets/turtlemedicine15411-d6vk-200w.png"
+              alt="turtleMedicine15411"
+              class="home-frame-turtle-medicine1"
+            />
+            <span class="home-frame-text54">
+              <span>
+                <span>Beaphar Bird Wormer</span>
+                <br />
+                <span>$15.95</span>
+              </span>
+            </span>
+            <span class="home-frame-text59 labelFormat">
+              <span>
+                <span>Equiox, 57 mg Chewable Tablets, 60 Ct.</span>
+                <br />
+                <span>$95.99</span>
+              </span>
+            </span>
+            <span class="home-frame-text64 labelFormat">
+              <span>
+                <span>Zoo Med Reptisafe Reptile Water Conditioner</span>
+                <br />
+                <span>$4.99</span>
+              </span>
+            </span>
+            <span class="home-frame-text69 labelFormat">
+              <span>
+                <span>API MelaFix for Aquariums, 4oz</span>
+                <br />
+                <span>$10.99</span>
+              </span>
+            </span>
+          </div>
+          <span class="home-frame-text74"><span>Filter</span></span>
+          <span class="home-frame-text76"><span>Deals</span></span>
+          <span class="home-frame-text78"><span>All</span></span>
+          <span class="home-frame-text80"><span>Misc</span></span>
+          <span class="home-frame-text82"><span>Cats</span></span>
+          <div class="home-frame-magnifyingglass">
+            <span class="home-frame-text84"><span>􀊫</span></span>
+          </div>
+          <div class="home-frame-group18336">
+              
+            <img
+              src="public/playground_assets/rectangle9822306-9pbb-200h.png"
+              alt="Rectangle9822306"
+              class="home-frame-rectangle982"
+            />
+            
+            <div class="home-frame-footer-nav">
+              <div class="home-frame-frame18310">
+                <div class="home-frame-frame859">
+                   <img
+                    src="public/playground_assets/unioni236-jti.svg"
+                    alt="UnionI236"
+                    class="home-frame-union"
+                  />
+                 <div>
+                      <a style="position:relative; right:30px; top:20px;" href="Default.aspx">Home</a>
+                     </div>
+                    <!--Login Icon clickable link to land on the login page -->
+                    <a style="position:relative; right:20px; top:20px;" href="PageTwo.aspx">Login</a>
+
+                  <a style="position:relative; right:10px; top:20px;" href="PageThree.aspx">Cart</a>
+                    
+                  <a style="position:relative; right:2px; top:20px;" href="PageFour.aspx">Questions/OrderStatus</a>
+
+
+            
+                    
+                    
+                </div>
+              </div>
+              <div class="home-frame-frame18309">
+                <img
+                  src="public/playground_assets/ideatelinecarti235-wm2.svg"
+                  alt="ideatelinecartI235"
+                  class="home-frame-ideatelinecart"
+                />
+                
+                   <!--Cart Icon clickable link to land on the cart page -->
+                   <a  style="position:relative; right:20px; font-size:9px;" href="PageThree.aspx">
+                     .  </a>
+              </div>
+              <div class="home-frame-question-mark-icon">
+                <img
+                  src="public/playground_assets/ellipse2133755-5mz8.svg"
+                  alt="Ellipse2133755"
+                  class="home-frame-ellipse213"
+                />
+                <span class="home-frame-text86">?</span>
+              </div>
+            </div>
+          </div>
+          <div class="home-frame-group18324">
+            <div class="home-frame-group18315">
+              <span class="home-frame-text87">
+                <span>Products For Dogs</span>
+              </span>
+            </div>
+            <div class="home-frame-group18321">
+              <div class="home-frame-group18319">
+                <div class="home-frame-group18312">
+                  <div class="home-frame-group18314">
+                    <div class="home-frame-group18311">
+                      <span class="home-frame-text89">
+                        <span>Products For Cats</span>
+                      </span>
+                    </div>
+                    <img
+                      src="public/playground_assets/line22381-uan.svg"
+                      alt="Line22381"
+                      class="home-frame-line2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-frame-group18322">
+              <div class="home-frame-group18318">
+                <div class="home-frame-group18310">
+                  <span class="home-frame-text91">
+                    <span>Products For Misc</span>
+                  </span>
+                  <img
+                    src="public/playground_assets/line32382-8ixs.svg"
+                    alt="Line32382"
+                    class="home-frame-line3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="public/playground_assets/checkbox21165-e20l-200h.png"
+            alt="checkBox21165"
+            class="home-frame-check-box22"
+          />
+          <img
+            src="public/playground_assets/houseicon11202-qqv-200h.png"
+            alt="houseIcon11202"
+            class="home-frame-house-icon1"
+          />
         </div>
-    </nav>
+      </div>
+    </div>
+  
+    <!--home frame done -->
+
+
+ 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-</div>
+
 </form>
-</body>
+
 </html>

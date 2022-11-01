@@ -90,12 +90,118 @@
     <Content Include="bootstrap-5.2.2-dist\bootstrap-5.2.2-dist\js\bootstrap.js" />
     <Content Include="bootstrap-5.2.2-dist\bootstrap-5.2.2-dist\js\bootstrap.min.js" />
     <Content Include="Default.aspx" />
+    <Content Include="home-frame.css" />
+    <Content Include="home-frame.html" />
     <Content Include="images\donutDog.jpg" />
     <Content Include="images\pedMedLogo.png" />
     <Content Include="images\petTest %281%29.png" />
+    <Content Include="login-frame.css" />
+    <Content Include="login-frame.html" />
+    <Content Include="loginstyle.css" />
+    <Content Include="order-frame.css" />
+    <Content Include="orderStyle.css" />
+    <Content Include="PageFour.aspx" />
     <Content Include="PageThree.aspx" />
     <Content Include="PageTwo.aspx" />
+    <Content Include="public\playground_assets\alarmi151-c0ag.svg" />
+    <Content Include="public\playground_assets\alarmi202-t53r.svg" />
+    <Content Include="public\playground_assets\alarmi705-elz.svg" />
+    <Content Include="public\playground_assets\bluetoothi151-jkbp.svg" />
+    <Content Include="public\playground_assets\bluetoothi202-ije.svg" />
+    <Content Include="public\playground_assets\bluetoothi705-5glg.svg" />
+    <Content Include="public\playground_assets\bodyi151-cg9vi.svg" />
+    <Content Include="public\playground_assets\bodyi202-tmo.svg" />
+    <Content Include="public\playground_assets\bodyi705-48o5.svg" />
+    <Content Include="public\playground_assets\cardicon17042-qg0d-200h.png" />
+    <Content Include="public\playground_assets\catmed112399-72m-200h.png" />
+    <Content Include="public\playground_assets\catmed212400-lax8-200h.png" />
+    <Content Include="public\playground_assets\catmed312401-egn-200h.png" />
+    <Content Include="public\playground_assets\catmed412402-4j6e-200h.png" />
+    <Content Include="public\playground_assets\catmed512403-2pmo-200h.png" />
+    <Content Include="public\playground_assets\catmed612404-jqpp-200w.png" />
+    <Content Include="public\playground_assets\catmed712405-nj5j-200w.png" />
+    <Content Include="public\playground_assets\catmed912407-unp9-200h.png" />
+    <Content Include="public\playground_assets\checkbox11165-bzmq-200h.png" />
+    <Content Include="public\playground_assets\checkbox11165-gee8-200h.png" />
+    <Content Include="public\playground_assets\checkbox21165-2puo-200h.png" />
+    <Content Include="public\playground_assets\checkbox21165-e20l-200h.png" />
+    <Content Include="public\playground_assets\checkbox21165-gyoe-200h.png" />
+    <Content Include="public\playground_assets\dog13327-oqk-200w.png" />
+    <Content Include="public\playground_assets\dogmed112383-nln-200h.png" />
+    <Content Include="public\playground_assets\dogmed212384-t3qd-200h.png" />
+    <Content Include="public\playground_assets\dogmed312390-1zd-200w.png" />
+    <Content Include="public\playground_assets\dogmed31i615-c0l-200w.png" />
+    <Content Include="public\playground_assets\dogmed418138-eehl-200h.png" />
+    <Content Include="public\playground_assets\dogmed512395-c1y-200w.png" />
+    <Content Include="public\playground_assets\ellipse2131244-yfc.svg" />
+    <Content Include="public\playground_assets\ellipse2131244-z32o.svg" />
+    <Content Include="public\playground_assets\ellipse2133755-5mz8.svg" />
+    <Content Include="public\playground_assets\fishmedicine15410-xerh-200w.png" />
+    <Content Include="public\playground_assets\hoarsemedicine15409-p4h-200w.png" />
+    <Content Include="public\playground_assets\houseicon11202-qqv-200h.png" />
+    <Content Include="public\playground_assets\houseicon21243-mc12l-200h.png" />
+    <Content Include="public\playground_assets\houseicon31244-k596-200h.png" />
+    <Content Include="public\playground_assets\iconsignali151-d7rh.svg" />
+    <Content Include="public\playground_assets\iconsignali202-nm4h.svg" />
+    <Content Include="public\playground_assets\iconsignali705-yxjf.svg" />
+    <Content Include="public\playground_assets\ideatelinecarti235-wm2.svg" />
+    <Content Include="public\playground_assets\image111013327-jl77-200h.png" />
+    <Content Include="public\playground_assets\image11102i615-mcdi-200h.png" />
+    <Content Include="public\playground_assets\line176938-18ki.svg" />
+    <Content Include="public\playground_assets\line22381-uan.svg" />
+    <Content Include="public\playground_assets\line2i615-r1k.svg" />
+    <Content Include="public\playground_assets\line32382-8ixs.svg" />
+    <Content Include="public\playground_assets\line6i615-wj6.svg" />
+    <Content Include="public\playground_assets\line76155-eqfv.svg" />
+    <Content Include="public\playground_assets\nortonthemailmanaslighttanfishleg15031-llos-200w.png" />
+    <Content Include="public\playground_assets\parrotmedicine15408-3ez-200w.png" />
+    <Content Include="public\playground_assets\parrotmedicine1i615-fcik-200w.png" />
+    <Content Include="public\playground_assets\phone2017-tk5t.svg" />
+    <Content Include="public\playground_assets\premiumvectorcutedogandcatcartoonillustrationanima5031-bsh-200h.png" />
+    <Content Include="public\playground_assets\rectangle12016-pm0n-200h.png" />
+    <Content Include="public\playground_assets\rectangle17023753-lfdg-200h.png" />
+    <Content Include="public\playground_assets\rectangle17076155-70nh-200h.png" />
+    <Content Include="public\playground_assets\rectangle17086153-6wc-600w.png" />
+    <Content Include="public\playground_assets\rectangle17096937-771r-200h.png" />
+    <Content Include="public\playground_assets\rectangle17096940-1n7g-200h.png" />
+    <Content Include="public\playground_assets\rectangle17096940-hh5d-200h.png" />
+    <Content Include="public\playground_assets\rectangle17096940-imim-200h.png" />
+    <Content Include="public\playground_assets\rectangle17096940-orh-200h.png" />
+    <Content Include="public\playground_assets\rectangle17106939-p3f5-200w.png" />
+    <Content Include="public\playground_assets\rectangle17107043-rhcf-200h.png" />
+    <Content Include="public\playground_assets\rectangle17117043-jeij-200h.png" />
+    <Content Include="public\playground_assets\rectangle17126941-wx0n-200h.png" />
+    <Content Include="public\playground_assets\rectangle17127043-am8s-200h.png" />
+    <Content Include="public\playground_assets\rectangle17136942-pgp-200h.png" />
+    <Content Include="public\playground_assets\rectangle17137043-22rt-200h.png" />
+    <Content Include="public\playground_assets\rectangle17137044-fu0e-200h.png" />
+    <Content Include="public\playground_assets\rectangle17146942-376p-200h.png" />
+    <Content Include="public\playground_assets\rectangle17147044-5zh8-200h.png" />
+    <Content Include="public\playground_assets\rectangle17157044-647u-200h.png" />
+    <Content Include="public\playground_assets\rectangle22016-p11k-200h.png" />
+    <Content Include="public\playground_assets\rectangle9822306-9pbb-200h.png" />
+    <Content Include="public\playground_assets\rectangle9827047-2924-200h.png" />
+    <Content Include="public\playground_assets\rectangle9834528-2qzc-200h.png" />
+    <Content Include="public\playground_assets\reservei151-q91w.svg" />
+    <Content Include="public\playground_assets\reservei202-gnvf.svg" />
+    <Content Include="public\playground_assets\reservei705-xi3r.svg" />
+    <Content Include="public\playground_assets\terminali151-manm.svg" />
+    <Content Include="public\playground_assets\terminali202-5wi.svg" />
+    <Content Include="public\playground_assets\terminali705-h3og.svg" />
+    <Content Include="public\playground_assets\turtlemedicine15411-d6vk-200w.png" />
+    <Content Include="public\playground_assets\union1244-r0bi.svg" />
+    <Content Include="public\playground_assets\union1244-ur0n.svg" />
+    <Content Include="public\playground_assets\union1244-y05e.svg" />
+    <Content Include="public\playground_assets\unioni124-71x.svg" />
+    <Content Include="public\playground_assets\unioni236-jti.svg" />
+    <Content Include="public\playground_assets\vector1556938-nffl.svg" />
+    <Content Include="public\playground_assets\vector1566938-vn2r.svg" />
+    <Content Include="public\playground_assets\wifii151-sprn.svg" />
+    <Content Include="public\playground_assets\wifii202-f3wq.svg" />
+    <Content Include="public\playground_assets\wifii705-8aui.svg" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -112,6 +218,13 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="PageFour.aspx.cs">
+      <DependentUpon>PageFour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageFour.aspx.designer.cs">
+      <DependentUpon>PageFour.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PageThree.aspx.cs">
       <DependentUpon>PageThree.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,6 +240,13 @@
       <DependentUpon>PageTwo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main.Master" />
@@ -152,6 +272,7 @@
     <Content Include="bootstrap-5.2.2-dist\bootstrap-5.2.2-dist\js\bootstrap.esm.min.js.map" />
     <Content Include="bootstrap-5.2.2-dist\bootstrap-5.2.2-dist\js\bootstrap.js.map" />
     <Content Include="bootstrap-5.2.2-dist\bootstrap-5.2.2-dist\js\bootstrap.min.js.map" />
+    <Content Include="package.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
